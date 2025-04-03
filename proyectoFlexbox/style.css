@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgb(200, 159, 49);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__logo img {
+  width: 150px;
+  height: auto;
+}
+
+.header__nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px 20px;
+  background-color: #ececec;
+}
+
+.hero__image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero__content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero__content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero__content button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.footer__column {
+  max-width: 250px;
+}
+
+.footer__column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer__column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer__column p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__content h2 {
+    font-size: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer__column {
+    text-align: center;
+  }
+}
